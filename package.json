@@ -1,0 +1,14 @@
+{
+  "name": "site-cloner",
+  "version": "1.0.0",
+  "description": "Clone a fully-rendered website (HTML + CSS + JS + images + fonts) to local files with rewritten paths.",
+  "type": "commonjs",
+  "main": "clone.js",
+  "scripts": {
+    "clone": "node clone.js"
+  },
+  "dependencies": {
+    "playwright": "^1.47.0",
+    "archiver": "^7.0.1"
+  }
+}
