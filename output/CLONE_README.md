@@ -6,12 +6,9 @@ https://www.asyv.org/
 
 ## Cloned Pages
 
-- `/`
-- `/blog`
-- `/impact`
-- `/careers`
-- `/asyv-model`
-- `/the-team`
+- `/bwiranews`
+- `/start-a-fundraiser`
+- `/financials`
 
 ## Folder Structure
 
@@ -46,4 +43,4 @@ database, payments, forms, search services, CMS, or other server-side
 systems may not work offline.
 
 Cloned on:
-2026-09-20T22:33:08.882Z
+2026-09-22T19:16:07.428Z
