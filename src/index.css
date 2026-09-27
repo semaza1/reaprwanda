@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-asyv-bg text-[rgba(0,0,0,0.75)] font-sans;
+  }
+}
+
+@font-face {
+  font-family: 'social-icon-font';
+  src: url('/fonts/social-icon-font.woff') format('woff'),
+       url('/fonts/social-icon-font.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'squarespace-ui-font';
+  src: url('/fonts/squarespace-ui-font.woff') format('woff'),
+       url('/fonts/squarespace-ui-font.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Alice';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/c8b96ca6-240c-4f90-9c36-d05f293982af/latin-ext.woff2') format('woff2');
+}
