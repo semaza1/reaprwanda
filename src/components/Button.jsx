@@ -9,10 +9,10 @@ const Button = ({ children, to, href, variant = 'primary', className = '', ...pr
   const sizeStyle = "py-[21px] px-[34px] text-[16.5px] leading-normal";
 
   const variants = {
-    primary: "bg-white text-asyv-orange hover:opacity-90",
-    secondary: "bg-asyv-orange text-white hover:opacity-90",
-    outline: "border-2 border-asyv-orange text-asyv-orange hover:bg-asyv-orange hover:text-white",
-    white: "bg-white text-asyv-orange hover:bg-gray-100"
+    primary: "bg-white text-reap-yellow hover:opacity-90",
+    secondary: "bg-reap-yellow text-white hover:opacity-90",
+    outline: "border border-reap-yellow text-reap-yellow hover:bg-reap-yellow hover:text-white",
+    white: "bg-white text-reap-yellow hover:bg-gray-100"
   };
 
   const combinedClasses = `${baseStyle} ${sizeStyle} ${variants[variant]} ${className}`;

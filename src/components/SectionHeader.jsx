@@ -9,7 +9,7 @@ const SectionHeader = ({ title, subtitle, alignment = 'center', className = '' }
 
   return (
     <div className={`mb-12 ${alignmentClass} ${className}`}>
-      <h2 className="text-[47px] leading-[56.4px] font-semibold text-asyv-orange tracking-[1.41px] mb-4 font-sans whitespace-pre-wrap">
+      <h2 className="text-[47px] leading-[56.4px] font-semibold text-reap-yellow tracking-[1.41px] mb-4 font-sans whitespace-pre-wrap">
         {title}
       </h2>
       {subtitle && (

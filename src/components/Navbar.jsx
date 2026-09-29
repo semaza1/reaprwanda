@@ -6,11 +6,34 @@ const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    { name: 'What We Do', to: '/what-we-do-1' },
-    { name: 'About Us', to: '/about-us' },
-    { name: 'Visit the Village', to: '/visit-the-village' },
-    { name: 'Get Involved', to: '/get-involved' },
-    { name: 'News & Media', to: '/new-folder' },
+    { 
+      name: 'About Us', 
+      to: '/about-us',
+      subLinks: [
+        { name: 'Philosophy', to: '/about-us/philosophy' },
+        { name: 'Team', to: '/about-us/team' },
+        { name: 'History', to: '/about-us/history' }
+      ]
+    },
+    { name: 'Blog', to: '/blog' },
+    { 
+      name: 'Strategies', 
+      to: '/strategies',
+      subLinks: [
+        { name: 'Education Enrichment', to: '/strategies/education-enrichment' },
+        { name: 'Community Resilience', to: '/strategies/community-resilience' }
+      ]
+    },
+    { 
+      name: 'Impact', 
+      to: '/impact',
+      subLinks: [
+        { name: 'Accomplishments', to: '/impact/accomplishments' },
+        { name: 'Annual Reports', to: '/impact/annual-reports' }
+      ]
+    },
+    { name: 'Gallery', to: '/gallery' },
+    { name: 'Contact', to: '/contact' },
   ];
 
   return (
@@ -22,9 +45,9 @@ const Navbar = () => {
           <div className="flex-shrink-0 flex items-center">
             <Link to="/" className="flex items-center">
               <img 
-                src="/images/Agahozo_Shalom_Logo.png" 
+                src="/images/REAP_Logo.webp" 
                 alt="Agahozo-Shalom Youth Village" 
-                className="w-[164px] h-auto object-contain"
+                className="w-[164px] h-[150px] object-contain"
               />
             </Link>
           </div>
@@ -32,20 +55,42 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center">
             {navLinks.map((link) => (
-              <Link 
-                key={link.name} 
-                to={link.to} 
-                className="text-[14.5px] text-asyv-green font-normal mx-[6.5px] py-[9px] hover:opacity-80 transition-opacity font-sans"
-              >
-                {link.name}
-              </Link>
+              <div key={link.name} className="relative group">
+                <Link 
+                  to={link.to} 
+                  className="text-[14.5px] text-reap-green font-normal mx-[6.5px] py-[9px] hover:opacity-80 transition-opacity font-sans flex items-center gap-1"
+                >
+                  {link.name}
+                  {link.subLinks && (
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  )}
+                </Link>
+                {/* Dropdown Menu */}
+                {link.subLinks && (
+                  <div className="absolute left-0 top-full pt-2 hidden group-hover:block w-auto min-w-[220px] z-50">
+                    <div className="bg-white shadow-lg border border-gray-100 rounded-md py-2">
+                      {link.subLinks.map((subLink) => (
+                        <Link
+                          key={subLink.name}
+                          to={subLink.to}
+                          className="block px-4 py-2 text-[14.5px] text-reap-green hover:bg-gray-50 hover:text-reap-yellow transition-colors font-sans whitespace-nowrap"
+                        >
+                          {subLink.name}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
             ))}
             {/* CTA Buttons */}
             <div className="ml-[12.5px] flex space-x-[11px]">
               <Button 
                 href="https://fundraise.asyv.org/campaign/759445/donate"
                 variant="outline"
-                className="h-[47px] px-[17px] text-[15.5px]"
+                className="h-[40px] px-[15px] text-[15px]"
               >
                 Donate
               </Button>
@@ -53,10 +98,10 @@ const Navbar = () => {
           </nav>
 
           {/* Mobile Menu Button */}
-          <div className="flex items-center md:hidden">
+          <div className="flex items-center md:hidden lg:hidden">
             <button 
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="text-gray-700 hover:text-red-700 focus:outline-none p-2"
+              className="text-gray-700 hover:text-reap-yellow focus:outline-none p-2"
               aria-expanded={isMobileMenuOpen}
             >
               <span className="sr-only">Open main menu</span>
@@ -75,17 +120,32 @@ const Navbar = () => {
 
       {/* Mobile Navigation */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-white border-t border-gray-100 shadow-lg absolute w-full left-0">
+        <div className="lg:hidden bg-white border-t border-gray-100 shadow-lg absolute w-full left-0 z-50">
           <div className="px-4 pt-2 pb-6 space-y-1">
             {navLinks.map((link) => (
-              <Link
-                key={link.name}
-                to={link.to}
-                className="block px-3 py-3 text-base font-semibold text-gray-800 hover:bg-gray-50 hover:text-red-700 rounded-md transition-colors"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                {link.name}
-              </Link>
+              <div key={link.name}>
+                <Link
+                  to={link.to}
+                  className="block px-3 py-3 text-base font-semibold text-gray-800 hover:bg-gray-50 hover:text-reap-yellow rounded-md transition-colors"
+                  onClick={() => !link.subLinks && setIsMobileMenuOpen(false)}
+                >
+                  {link.name}
+                </Link>
+                {link.subLinks && (
+                  <div className="pl-6 space-y-1 border-l-2 border-gray-100 ml-4 mb-2">
+                    {link.subLinks.map((subLink) => (
+                      <Link
+                        key={subLink.name}
+                        to={subLink.to}
+                        className="block px-3 py-2 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-reap-yellow rounded-md transition-colors"
+                        onClick={() => setIsMobileMenuOpen(false)}
+                      >
+                        {subLink.name}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
             ))}
             <div className="pt-4 px-3">
               <Button 

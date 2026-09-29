@@ -29,7 +29,7 @@ const Impact = () => {
         {/* Intro Section */}
         <div className="grid grid-cols-12 gap-x-4 mb-[60px]">
           <div className="col-start-3 col-span-8">
-            <h2 className="text-[47px] font-semibold tracking-[1.41px] leading-[56.4px] text-asyv-orange mb-[16px] font-sans">
+            <h2 className="text-[47px] font-semibold tracking-[1.41px] leading-[56.4px] text-reap-yellow mb-[16px] font-sans">
               Positive changemakers
             </h2>
             <p className="text-[16px] font-light text-[#100404] leading-[25.6px]">
@@ -41,7 +41,7 @@ const Impact = () => {
         {/* Understanding the Need Intro */}
         <div className="grid grid-cols-12 gap-x-4 mb-8">
           <div className="col-span-12">
-            <h3 className="text-[17px] font-semibold text-asyv-green tracking-[1.7px] leading-[26.35px] uppercase">
+            <h3 className="text-[17px] font-semibold text-reap-green tracking-[1.7px] leading-[26.35px] uppercase">
               Understanding the need
             </h3>
           </div>
@@ -80,8 +80,8 @@ const Impact = () => {
           <div className="col-span-8">
             <div className="grid grid-cols-8 gap-x-4">
               <div className="col-start-3 col-span-3 text-center px-4">
-                <h2 className="text-[47px] font-semibold tracking-[1.41px] leading-[56.4px] text-asyv-orange mb-[16px] font-sans">66%</h2>
-                <h3 className="text-[17px] font-semibold text-asyv-green tracking-[1.7px] leading-[26.35px] uppercase mt-2">
+                <h2 className="text-[47px] font-semibold tracking-[1.41px] leading-[56.4px] text-reap-yellow mb-[16px] font-sans">66%</h2>
+                <h3 className="text-[17px] font-semibold text-reap-green tracking-[1.7px] leading-[26.35px] uppercase mt-2">
                   were living without one or both parents.
                 </h3>
                 <p className="text-[16px] font-light text-[#100404] leading-[25.6px] mt-4">
@@ -89,8 +89,8 @@ const Impact = () => {
                 </p>
               </div>
               <div className="col-span-3 text-center px-4">
-                <h2 className="text-[47px] font-semibold tracking-[1.41px] leading-[56.4px] text-asyv-orange mb-[16px] font-sans">34%</h2>
-                <h3 className="text-[17px] font-semibold text-asyv-green tracking-[1.7px] leading-[26.35px] uppercase mt-2">
+                <h2 className="text-[47px] font-semibold tracking-[1.41px] leading-[56.4px] text-reap-yellow mb-[16px] font-sans">34%</h2>
+                <h3 className="text-[17px] font-semibold text-reap-green tracking-[1.7px] leading-[26.35px] uppercase mt-2">
                   experienced vulnerabilities other than living without their parents, including poverty.
                 </h3>
               </div>
@@ -99,8 +99,8 @@ const Impact = () => {
           <div className="col-span-4">
             <div className="grid grid-cols-4 gap-x-4">
               <div className="col-span-3 text-center px-4">
-                <h2 className="text-[47px] font-semibold tracking-[1.41px] leading-[56.4px] text-asyv-orange mb-[16px] font-sans">92%</h2>
-                <h3 className="text-[17px] font-semibold text-asyv-green tracking-[1.7px] leading-[26.35px] uppercase mt-2">
+                <h2 className="text-[47px] font-semibold tracking-[1.41px] leading-[56.4px] text-reap-yellow mb-[16px] font-sans">92%</h2>
+                <h3 className="text-[17px] font-semibold text-reap-green tracking-[1.7px] leading-[26.35px] uppercase mt-2">
                   lived on two meals a day or less.
                 </h3>
               </div>
@@ -112,8 +112,8 @@ const Impact = () => {
 
         {/* Our Alumni Section */}
         <div className="text-center mb-[60px]">
-          <h2 className="text-[47px] font-semibold tracking-[1.41px] leading-[56.4px] text-asyv-orange mb-[16px] font-sans">Our alumni</h2>
-          <h3 className="text-[17px] font-semibold text-asyv-green tracking-[1.7px] leading-[26.35px] uppercase mt-2">See the Difference</h3>
+          <h2 className="text-[47px] font-semibold tracking-[1.41px] leading-[56.4px] text-reap-yellow mb-[16px] font-sans">Our alumni</h2>
+          <h3 className="text-[17px] font-semibold text-reap-green tracking-[1.7px] leading-[26.35px] uppercase mt-2">See the Difference</h3>
           <p className="text-[16px] font-light text-[#100404] leading-[25.6px] mt-4">Of our over 1,600 graduates:</p>
         </div>
 
@@ -121,20 +121,20 @@ const Impact = () => {
         <div className="grid grid-cols-12 gap-x-4 mb-[60px] items-center">
           <div className="col-start-2 col-span-5 flex flex-col justify-center space-y-12 pr-8">
             <div className="text-center">
-              <h2 className="text-[47px] font-semibold tracking-[1.41px] leading-[56.4px] text-asyv-orange mb-[16px] font-sans">98%</h2>
-              <h3 className="text-[17px] font-semibold text-asyv-green tracking-[1.7px] leading-[26.35px] uppercase mt-2">
+              <h2 className="text-[47px] font-semibold tracking-[1.41px] leading-[56.4px] text-reap-yellow mb-[16px] font-sans">98%</h2>
+              <h3 className="text-[17px] font-semibold text-reap-green tracking-[1.7px] leading-[26.35px] uppercase mt-2">
                 have expressed feeling more confident and better equipped for a happy and successful future.
               </h3>
             </div>
             <div className="text-center">
-              <h2 className="text-[47px] font-semibold tracking-[1.41px] leading-[56.4px] text-asyv-orange mb-[16px] font-sans">65%</h2>
-              <h3 className="text-[17px] font-semibold text-asyv-green tracking-[1.7px] leading-[26.35px] uppercase mt-2">
+              <h2 className="text-[47px] font-semibold tracking-[1.41px] leading-[56.4px] text-reap-yellow mb-[16px] font-sans">65%</h2>
+              <h3 className="text-[17px] font-semibold text-reap-green tracking-[1.7px] leading-[26.35px] uppercase mt-2">
                 have enrolled in tertiary education, compared to 8% of young people nationally.
               </h3>
             </div>
             <div className="text-center">
-              <h2 className="text-[47px] font-semibold tracking-[1.41px] leading-[56.4px] text-asyv-orange mb-[16px] font-sans">70%</h2>
-              <h3 className="text-[17px] font-semibold text-asyv-green tracking-[1.7px] leading-[26.35px] uppercase mt-2">
+              <h2 className="text-[47px] font-semibold tracking-[1.41px] leading-[56.4px] text-reap-yellow mb-[16px] font-sans">70%</h2>
+              <h3 className="text-[17px] font-semibold text-reap-green tracking-[1.7px] leading-[26.35px] uppercase mt-2">
                 are employed, more than 20% higher than the national average for youth.
               </h3>
             </div>
@@ -154,7 +154,7 @@ const Impact = () => {
 
         {/* Tulane Study Section */}
         <div className="mb-[60px]">
-          <h3 className="text-[17px] font-semibold text-asyv-green tracking-[1.7px] leading-[26.35px] uppercase mb-4">
+          <h3 className="text-[17px] font-semibold text-reap-green tracking-[1.7px] leading-[26.35px] uppercase mb-4">
             An Analysis By Tulane University
           </h3>
           <p className="text-[16px] font-light text-[#100404] leading-[25.6px] mb-[30px]">

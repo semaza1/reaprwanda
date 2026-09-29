@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer className="bg-asyv-footer text-[#dfdfdf] font-sans font-light text-[16px] leading-[25.6px] pt-[80px] pb-[40px] px-[34px]">
+    <footer className="bg-reap-dark-green text-[#dfdfdf] font-sans font-light text-[16px] leading-[25.6px] pt-[80px] pb-[40px] px-[34px]">
       <div className="max-w-[1200px] mx-auto">
         
         {/* Main Footer Content */}
@@ -18,45 +18,27 @@ const Footer = () => {
             </p>
             <p className="mb-4 font-semibold">U.S. Office:</p>
             <h3 className="text-[17px] font-semibold tracking-[1.7px] my-[17px] text-white">
-              228 Park Ave S<br />
-              PMB 836114<br />
-              New York, NY 10003
+              240 W 75th St<br />
+              Apt 4C New York<br />
+              New York 10023
             </h3>
             <p className="mb-4">
-              <span className="font-semibold">PHONE: </span>631-317-1763<br />
+              <span className="font-semibold">PHONE: </span>+250-783-361-986<br />
               <span className="font-semibold">EMAIL: </span>
-              <a href="mailto:info@asyv.org" className="font-semibold hover:opacity-80">info@asyv.org</a>
+              <a href="mailto:info@reaprwanda.org" className="font-semibold hover:opacity-80">info@reaprwanda.org</a>
             </p>
-            <p className="mb-4 font-semibold">Rwanda Office and Liquidnet Family High School:</p>
+            <p className="mb-4 font-semibold">Rwanda Office:</p>
             <p className="mb-4">Mailing Address - </p>
             <h3 className="text-[17px] font-semibold tracking-[1.7px] my-[17px] text-white">
-              Agahozo-Shalom Youth Village<br />
-              P.O. Box 7299<br />
-              Kigali, Rwanda
+              Rwanda Education Assistance Project<br />
+              P.O. Box 90<br />
+              Rwamagana, Musha, Rwanda
             </h3>
             <p className="mb-4">Visiting Address - </p>
             <h3 className="text-[17px] font-semibold tracking-[1.7px] my-[17px] text-white">
-              Agahozo-Shalom Youth Village<br />
-              Rwamagana District, Rubona Sector, Rwanda
+              Rwanda Education Assistance Project<br />
+              Rwamagana District, Musha Sector, Rwanda
             </h3>
-            <p className="mb-[40px]">
-              <span className="font-semibold">EMAIL: </span>
-              <a href="mailto:lfhs@asyv.org" className="font-semibold hover:opacity-80">lfhs@asyv.org</a>
-            </p>
-
-            <div className="flex gap-[16px]">
-              <div className="w-[191px]">
-                <a href="https://www.charitynavigator.org/ein/273530769" target="_blank" rel="noopener noreferrer">
-                  <img src="/images/CN_Encompass_121321_Takeaway_100.png" alt="Charity Navigator" className="w-full h-auto object-cover" />
-                </a>
-              </div>
-              <div className="w-[191px]">
-                {/* Guidestar image placeholder logic based on original html structure */}
-                <a href="https://www.guidestar.org/profile/27-3530769" target="_blank" rel="noopener noreferrer" className="block text-center mt-[20px]">
-                  <img src="/images/CN_Encompass_121321_Takeaway_100.png" alt="Guidestar" className="w-[150px] h-auto inline-block opacity-0" />
-                </a>
-              </div>
-            </div>
           </div>
 
           {/* Column 2: INFO */}
@@ -121,19 +103,11 @@ const Footer = () => {
                 <label className="sr-only">Last Name</label>
                 <input type="text" placeholder="" className="w-full max-w-[205.5px] h-[46px] px-[15px] py-[10px] text-[14px] rounded-[3px] text-gray-900 border-none outline-none" required />
               </div>
-              <button type="submit" className="mt-2 w-full max-w-[205.5px] h-[50px] p-[16px] text-[16px] font-normal text-white bg-asyv-orange rounded-[3px] hover:opacity-90 transition-opacity">
+              <button type="submit" className="mt-2 w-full max-w-[205.5px] h-[50px] p-[16px] text-[16px] font-normal text-white bg-reap-yellow rounded-[3px] hover:opacity-90 transition-opacity">
                 Sign up!
               </button>
             </form>
           </div>
-        </div>
-
-        {/* Nondiscriminatory Policy */}
-        <div className="text-center pt-[40px]">
-          <p className="mb-4">*NOTICE OF NONDISCRIMINATORY POLICY AS TO STUDENTS</p>
-          <p>
-            The Liquidnet Family High School admits students of any race, color, national and ethnic origin to all the rights, privileges, programs, and activities generally accorded or made available to students at the school. It does not discriminate on the basis of race, color, national and ethnic origin in administration of its educational policies, admissions policies, scholarship and loan programs, and athletic and other school-administered programs.
-          </p>
         </div>
 
       </div>

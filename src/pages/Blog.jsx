@@ -11,7 +11,7 @@ const Blog = () => {
       <main className="max-w-[1200px] mx-auto px-[34px] py-[60px]">
         {/* Header Section */}
         <div className="text-center mb-[60px]">
-          <h2 className="text-[47px] font-semibold tracking-[1.41px] leading-[56.4px] text-asyv-orange mb-[16px] font-sans">
+          <h2 className="text-[47px] font-semibold tracking-[1.41px] leading-[56.4px] text-reap-yellow mb-[16px] font-sans">
             Stories from the Village
           </h2>
           <p className="text-[16px] font-light leading-[25.6px] text-[#100404] italic font-sans">
@@ -41,7 +41,7 @@ const Blog = () => {
                 </time>
 
                 {/* Title */}
-                <h3 className="text-[20px] font-light leading-[24px] text-[#100404] mb-4 hover:text-asyv-orange transition-colors cursor-pointer">
+                <h3 className="text-[20px] font-light leading-[24px] text-[#100404] mb-4 hover:text-reap-yellow transition-colors cursor-pointer">
                   {post.title}
                 </h3>
 
@@ -52,7 +52,7 @@ const Blog = () => {
 
                 {/* Read More */}
                 <div className="mt-auto">
-                  <a href="#" className="text-[14px] font-medium leading-[20px] text-[#100404] hover:text-asyv-orange transition-colors inline-block pb-[10px]">
+                  <a href="#" className="text-[14px] font-medium leading-[20px] text-[#100404] hover:text-reap-yellow transition-colors inline-block pb-[10px]">
                     Read more &rarr;
                   </a>
                 </div>

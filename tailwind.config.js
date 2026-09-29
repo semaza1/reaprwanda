@@ -7,10 +7,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'asyv-green': '#47805f',
-        'asyv-orange': '#f39c45',
-        'asyv-bg': '#eef7ef',
-        'asyv-footer': '#363636',
+        'reap-green': '#30B028',
+        'reap-dark-green': '#003400',
+        'reap-yellow': '#F6B408',
+        'reap-blue': '#0193D7',
+        'reap-bg': '#FFFFFF',
+        'reap-text': '#003400',
       },
       fontFamily: {
         sans: ['sofia-pro', 'sans-serif'],

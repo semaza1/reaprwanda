@@ -3,14 +3,14 @@ import Button from './Button';
 
 const CTASection = ({ title, description, buttonText, buttonHref, buttonTo, imageBg }) => {
   return (
-    <section className="relative h-[738px] bg-asyv-bg overflow-hidden flex flex-col justify-center items-center">
+    <section className="relative h-[738px] bg-reap-bg overflow-hidden flex flex-col justify-center items-center">
       {imageBg && (
         <div className="absolute inset-0 z-0">
           <img src={imageBg} alt="Background" className="w-full h-full object-cover opacity-30" />
         </div>
       )}
       <div className="relative z-10 max-w-[1200px] mx-auto px-[34px] text-center w-full">
-        <h2 className="text-[47px] leading-[56.4px] font-semibold text-asyv-orange tracking-[1.41px] mb-6 font-sans whitespace-pre-wrap">
+        <h2 className="text-[47px] leading-[56.4px] font-semibold text-reap-yellow tracking-[1.41px] mb-6 font-sans whitespace-pre-wrap">
           {title}
         </h2>
         {description && (
