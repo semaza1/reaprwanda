@@ -10,9 +10,9 @@ const Navbar = () => {
       name: 'About Us', 
       to: '/about-us',
       subLinks: [
-        { name: 'Philosophy', to: '/about-us/philosophy' },
-        { name: 'Team', to: '/about-us/team' },
-        { name: 'History', to: '/about-us/history' }
+        { name: 'Philosophy', to: '/philosophy' },
+        { name: 'History', to: '/history' },
+        { name: 'Team', to: '/team' }
       ]
     },
     { name: 'Blog', to: '/blog' },
