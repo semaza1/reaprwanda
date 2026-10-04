@@ -1,27 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
-import SectionHeader from '../../components/SectionHeader';
 
-const teamMembers = [
-    {
-        name: "Edward Ballen",
-        role: "Founder",
-        image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=400&h=400",
-        bio: "Edward founded REAP after his journey to Rwanda in 2006, inspired by the children's deep desire to learn."
-    },
-    {
-        name: "Rachel Ballen",
-        role: "Co-Founder",
-        image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=400&h=400",
-        bio: "Rachel journeyed to Rwanda with Edward in 2006, helping to plant the seeds that would become REAP."
-    },
-    {
-        name: "Jane Doe",
-        role: "Board Member",
-        image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400&h=400",
-        bio: "A dedicated professional bringing years of experience to support REAP's educational initiatives."
-    },
+const staffMembers = [
     {
         name: "John Smith",
         role: "Director of Operations",
@@ -42,41 +23,195 @@ const teamMembers = [
     }
 ];
 
+// Reusable table component for the Board of Directors view
+const BoardTable = ({ title, members }) => (
+    <div className="mb-8">
+        {title && <h3 className="text-[16px] font-bold text-[#100404] mb-4">{title}</h3>}
+        <div className="border border-gray-200 rounded-sm overflow-hidden bg-white">
+            {members.map((member, i) => (
+                <div key={i} className={`flex border-b border-gray-200 last:border-b-0`}>
+                    <div className="w-1/2 p-2 border-r border-gray-200 text-[14px] text-gray-700">{member.lastName}</div>
+                    <div className="w-1/2 p-2 text-[14px] text-gray-700">{member.firstName}</div>
+                </div>
+            ))}
+        </div>
+    </div>
+);
+
 const Team = () => {
+    const [activeTab, setActiveTab] = useState('staff'); // 'staff' or 'board'
+
     return (
-        <div className="bg-reap-bg min-h-screen">
+        <div className="bg-reap-bg min-h-screen font-sans flex flex-col">
             <Navbar />
 
             {/* Hero Section */}
-            <section className="relative h-[618px] w-full flex items-center justify-center">
+            <section className="relative h-[400px] md:h-[500px] w-full flex items-center justify-center mt-[80px]">
                 <div className="absolute inset-0 z-0">
                     <img
-                        src="../images/team-hero.jpg"
+                        src="/images/team-hero.jpg"
                         alt="Team of REAP Rwanda"
                         className="w-full h-full object-cover object-center"
                     />
-                    <div className="absolute inset-0 bg-black/20"></div>
+                    <div className="absolute inset-0 bg-black/40"></div>
                 </div>
                 <div className="relative z-10 text-center w-[828px] max-w-full mx-auto px-4">
-                    <h1 className="text-[63px] leading-[69.3px] font-sans font-normal text-white my-[42.21px] max-w-[828px] mx-auto whitespace-pre-wrap">
-                        Meet our dedicated team
+                    <h1 className="text-[50px] md:text-[63px] leading-[1.1] font-sans font-normal text-white my-[40px] max-w-[828px] mx-auto whitespace-pre-wrap">
+                        Our Team
                     </h1>
                 </div>
             </section>
 
+            {/* Team Layout */}
+            <main className="flex-grow py-[80px] bg-white">
+                <div className="max-w-[1200px] mx-auto px-[34px] flex flex-col md:flex-row gap-12">
+                    
+                    {/* Sidebar Tabs */}
+                    <div className="w-full md:w-[300px] flex-shrink-0 flex flex-col gap-4">
+                        <button 
+                            onClick={() => setActiveTab('staff')}
+                            className={`w-full text-left px-6 py-4 bg-white border ${activeTab === 'staff' ? 'border-reap-green shadow-md text-reap-green' : 'border-gray-200 text-gray-600 hover:bg-gray-50'} font-semibold text-[16px] transition-all flex justify-between items-center`}
+                        >
+                            <span>+ REAP Staff</span>
+                            {activeTab === 'staff' && <span className="text-reap-green">▶</span>}
+                        </button>
+                        
+                        <button 
+                            onClick={() => setActiveTab('board')}
+                            className={`w-full text-left px-6 py-4 bg-white border ${activeTab === 'board' ? 'border-reap-green shadow-md text-reap-green' : 'border-gray-200 text-gray-600 hover:bg-gray-50'} font-semibold text-[16px] transition-all flex justify-between items-center`}
+                        >
+                            <span>+ Board of Directors</span>
+                            {activeTab === 'board' && <span className="text-reap-green">▶</span>}
+                        </button>
+                    </div>
 
-            {/* Team section */}
-            <section className="py-[100px]">
-                <div className="max-w-[1200px] mx-auto px-[34px]">
-                    <SectionHeader 
-                        title="Board of Directors & Staff" 
-                        alignment="center" 
-                        className="mb-16"
-                    />
-                    
-                    
+                    {/* Main Content Area */}
+                    <div className="w-full">
+                        {activeTab === 'staff' ? (
+                            /* REAP Staff Grid (Round Images, Name, Title, Bio) */
+                            <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-12 pt-4">
+                                {staffMembers.map((member, index) => (
+                                    <div key={index} className="flex flex-col items-center text-center group">
+                                        <div className="w-48 h-48 mb-6 overflow-hidden rounded-full shadow-lg border-4 border-gray-50">
+                                            <img 
+                                                src={member.image} 
+                                                alt={member.name} 
+                                                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                            />
+                                        </div>
+                                        <h3 className="text-[24px] font-semibold text-reap-green mb-1">{member.name}</h3>
+                                        <p className="text-[16px] font-bold text-reap-yellow mb-4 uppercase tracking-wide">{member.role}</p>
+                                        <p className="text-[16px] font-light text-[#100404] leading-relaxed max-w-sm">
+                                            {member.bio}
+                                        </p>
+                                    </div>
+                                ))}
+                            </div>
+                        ) : (
+                            /* Board of Directors Tables */
+                            <div className="pt-4">
+                                <h2 className="text-[32px] font-semibold text-reap-yellow text-center mb-12">
+                                    Rwanda Board Of Directors
+                                </h2>
+
+                                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                                    {/* Column 1: The General Assembly */}
+                                    <div>
+                                        <h3 className="text-[18px] font-bold text-[#100404] mb-6 text-center">The General Assembly</h3>
+                                        
+                                        <div className="space-y-6">
+                                            <BoardTable members={[
+                                                { lastName: "MUTABAZI", firstName: "Geoffrey" },
+                                                { lastName: "TUYISENGE", firstName: "Antoine" },
+                                                { lastName: "BALLEN", firstName: "Edward" },
+                                                { lastName: "KAYITARE Abraham", firstName: "Bruce" },
+                                                { lastName: "NTEZIYAREMYE", firstName: "Eugene" }
+                                            ]} />
+
+                                            <BoardTable members={[
+                                                { lastName: "RWABUKAMBA", firstName: "Muhoza" },
+                                                { lastName: "NASH GOVAN", firstName: "Annette" },
+                                                { lastName: "UWIMANA", firstName: "Clotilde" },
+                                                { lastName: "NKURUNZIZA", firstName: "Alexia" },
+                                                { lastName: "MUTATSINEZA", firstName: "Jean Paulin" }
+                                            ]} />
+
+                                            <BoardTable members={[
+                                                { lastName: "RWIZIGURA", firstName: "Samson" },
+                                                { lastName: "MUKANYANDWI", firstName: "Brigitte" },
+                                                { lastName: "MUGEMANYI", firstName: "Bonaventure" },
+                                                { lastName: "MUSABENDE", firstName: "Francoise" },
+                                                { lastName: "NIYONSHUTI", firstName: "Jean Paul" }
+                                            ]} />
+
+                                            <BoardTable members={[
+                                                { lastName: "NSEKANABO", firstName: "Denys" },
+                                                { lastName: "KANYAMIBWA", firstName: "Felicien" },
+                                                { lastName: "KAYITESI", firstName: "Annonciata" },
+                                                { lastName: "HABAKURAMA", firstName: "Bosco" },
+                                                { lastName: "MUTAGANZWA", firstName: "Muhoza Liane" },
+                                                { lastName: "GASHIRABAKE", firstName: "Theogene" },
+                                                { lastName: "HABUMUREMYI", firstName: "Eric" }
+                                            ]} />
+                                        </div>
+                                    </div>
+
+                                    {/* Column 2: The Executive Council */}
+                                    <div>
+                                        <h3 className="text-[18px] font-bold text-[#100404] mb-6 text-center">The Executive Council</h3>
+                                        
+                                        <BoardTable title="President /Legal Representative" members={[
+                                            { lastName: "MUTABAZI", firstName: "Geoffrey" }
+                                        ]} />
+
+                                        <BoardTable title="Vise President /Deputy" members={[
+                                            { lastName: "MUKANYANDWI", firstName: "Brigitte" }
+                                        ]} />
+
+                                        <BoardTable title="Advisors" members={[
+                                            { lastName: "BALLEN", firstName: "Edward" },
+                                            { lastName: "MUTAGANZWA", firstName: "Muhoza Liane" },
+                                            { lastName: "UWIMANA", firstName: "Clotilde" }
+                                        ]} />
+
+                                        <BoardTable title="Sectretary" members={[
+                                            { lastName: "KAYITARE Abraham", firstName: "Bruce" }
+                                        ]} />
+
+                                        <BoardTable title="Treasurer" members={[
+                                            { lastName: "TUYISENGE", firstName: "Antoine" }
+                                        ]} />
+                                    </div>
+
+                                    {/* Column 3: Various Boards */}
+                                    <div>
+                                        <h3 className="text-[18px] font-bold text-[#100404] mb-6 text-center">The Board of Auditors</h3>
+                                        
+                                        <BoardTable members={[
+                                            { lastName: "RWABUKAMBA", firstName: "Muhoza" },
+                                            { lastName: "NASH GOVAN", firstName: "Annette" }
+                                        ]} />
+
+                                        <h3 className="text-[18px] font-bold text-[#100404] mt-10 mb-6 text-center">The Board of Conflict Resolution</h3>
+                                        
+                                        <BoardTable members={[
+                                            { lastName: "UWIMANA", firstName: "Clotilde" },
+                                            { lastName: "NKURUNZIZA", firstName: "Alexia" }
+                                        ]} />
+
+                                        <h3 className="text-[18px] font-bold text-[#100404] mt-10 mb-6 text-center">Executive Secretariat</h3>
+                                        
+                                        <BoardTable members={[
+                                            { lastName: "MUTATSINEZA", firstName: "Jean Paulin" }
+                                        ]} />
+                                    </div>
+                                </div>
+                            </div>
+                        )}
+                    </div>
+
                 </div>
-            </section>
+            </main>
 
             <Footer />
         </div>
