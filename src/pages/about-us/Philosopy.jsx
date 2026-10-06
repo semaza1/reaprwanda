@@ -30,7 +30,7 @@ const Philosopy = () => {
             <section className="py-[100px]">
                 <div className="max-w-[1200px] mx-auto px-[34px]">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                        <div>
+                        <div className='border-r border-gray-200 pr-8'>
                             <SectionHeader title="Mission" alignment="left" className="mb-6" />
                             <p className="text-[16px] text-gray-800 mb-8 leading-[25.6px] font-sans font-light">
                                 Creating an integrated and innovative approach to education and community development that improves literacy rates and fosters socio-economic well-being with the active support and leadership of the community.
@@ -43,7 +43,7 @@ const Philosopy = () => {
                             </p>
                         </div>
                     </div>
-
+                    <hr className="border-t border-gray-200 my-[60px]" />
                     {/* Goals Section */}
                     <div className="my-16">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -58,6 +58,8 @@ const Philosopy = () => {
                             </div>
                         </div>
                     </div>
+
+                    <hr className="border-t border-gray-200 my-[60px]" />
 
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                         

@@ -55,7 +55,13 @@ const Team = () => {
                             className={`w-full text-left px-6 py-4 bg-white border ${activeTab === 'staff' ? 'border-reap-green shadow-md text-reap-green' : 'border-gray-200 text-gray-600 hover:bg-gray-50'} font-semibold text-[16px] transition-all flex justify-between items-center`}
                         >
                             <span>+ REAP Staff</span>
-                            {activeTab === 'staff' && <span className="text-reap-green">▶</span>}
+                            {activeTab === 'staff' && (
+                                <span className="text-reap-green">
+                                    <svg className="w-4 h-4 -rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </span>
+                            )}
                         </button>
                         
                         <button 
@@ -63,7 +69,13 @@ const Team = () => {
                             className={`w-full text-left px-6 py-4 bg-white border ${activeTab === 'board' ? 'border-reap-green shadow-md text-reap-green' : 'border-gray-200 text-gray-600 hover:bg-gray-50'} font-semibold text-[16px] transition-all flex justify-between items-center`}
                         >
                             <span>+ Board of Directors</span>
-                            {activeTab === 'board' && <span className="text-reap-green">▶</span>}
+                            {activeTab === 'board' && (
+                                <span className="text-reap-green">
+                                    <svg className="w-4 h-4 -rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </span>
+                            )}
                         </button>
                     </div>
 
