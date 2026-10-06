@@ -2,26 +2,7 @@ import React, { useState } from 'react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 
-const staffMembers = [
-    {
-        name: "John Smith",
-        role: "Director of Operations",
-        image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=400&h=400",
-        bio: "Passionate about creating opportunities for the youth in Rwanda through holistic education."
-    },
-    {
-        name: "Sarah Jenkins",
-        role: "Educational Coordinator",
-        image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=400&h=400",
-        bio: "Working closely with local schools to ensure sustainable educational practices and support."
-    },
-    {
-        name: "Michael Chen",
-        role: "Community Outreach",
-        image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=400&h=400",
-        bio: "Fostering strong relationships between REAP and the local communities we serve in Rwanda."
-    }
-];
+import { teamMembers } from '../../data/the-teamData';
 
 // Reusable table component for the Board of Directors view
 const BoardTable = ({ title, members }) => (
@@ -40,6 +21,7 @@ const BoardTable = ({ title, members }) => (
 
 const Team = () => {
     const [activeTab, setActiveTab] = useState('staff'); // 'staff' or 'board'
+    const [selectedMember, setSelectedMember] = useState(null);
 
     return (
         <div className="bg-reap-bg min-h-screen font-sans flex flex-col">
@@ -90,7 +72,7 @@ const Team = () => {
                         {activeTab === 'staff' ? (
                             /* REAP Staff Grid (Round Images, Name, Title, Bio) */
                             <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-12 pt-4">
-                                {staffMembers.map((member, index) => (
+                                {teamMembers.map((member, index) => (
                                     <div key={index} className="flex flex-col items-center text-center group">
                                         <div className="w-48 h-48 mb-6 overflow-hidden rounded-full shadow-lg border-4 border-gray-50">
                                             <img 
@@ -99,11 +81,14 @@ const Team = () => {
                                                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                                             />
                                         </div>
-                                        <h3 className="text-[24px] font-semibold text-reap-green mb-1">{member.name}</h3>
-                                        <p className="text-[16px] font-bold text-reap-yellow mb-4 uppercase tracking-wide">{member.role}</p>
-                                        <p className="text-[16px] font-light text-[#100404] leading-relaxed max-w-sm">
-                                            {member.bio}
-                                        </p>
+                                        <h3 className="text-[20px] font-semibold text-reap-green mb-1">{member.name}</h3>
+                                        <p className="text-[12px] font-bold text-reap-yellow mb-4 uppercase tracking-wide">{member.role}</p>
+                                        <button 
+                                            onClick={() => setSelectedMember(member)}
+                                            className="text-[14px] font-medium text-reap-green hover:text-reap-yellow transition-colors underline"
+                                        >
+                                            Read More
+                                        </button>
                                     </div>
                                 ))}
                             </div>
@@ -212,6 +197,35 @@ const Team = () => {
 
                 </div>
             </main>
+
+            {/* Bio Modal */}
+            {selectedMember && (
+                <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60" onClick={() => setSelectedMember(null)}>
+                    <div 
+                        className="bg-white rounded-lg p-8 max-w-2xl w-full relative shadow-2xl"
+                        onClick={(e) => e.stopPropagation()}
+                    >
+                        <button 
+                            onClick={() => setSelectedMember(null)}
+                            className="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-3xl leading-none"
+                        >
+                            &times;
+                        </button>
+                        <div className="flex flex-col md:flex-row gap-6 items-center md:items-start">
+                            <div className="w-32 h-32 flex-shrink-0 rounded-full overflow-hidden border-2 border-gray-100">
+                                <img src={selectedMember.image} alt={selectedMember.name} className="w-full h-full object-cover" />
+                            </div>
+                            <div className="text-left flex-1">
+                                <h3 className="text-[24px] font-semibold text-reap-green mb-1">{selectedMember.name}</h3>
+                                <p className="text-[16px] font-bold text-reap-yellow mb-4 uppercase tracking-wide">{selectedMember.role}</p>
+                                <p className="text-[16px] font-light text-[#100404] leading-relaxed text-justify">
+                                    {selectedMember.bio}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            )}
 
             <Footer />
         </div>

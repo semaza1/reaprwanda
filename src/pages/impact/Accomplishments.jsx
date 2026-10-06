@@ -1,10 +1,10 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import Button from '../components/Button';
-import CTASection from '../components/CTASection';
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
+import Button from '../../components/Button';
+import CTASection from '../../components/CTASection';
 
-const Impact = () => {
+const Accomplishments = () => {
   return (
     <div className="min-h-screen bg-white font-sans">
       <Navbar />
@@ -12,7 +12,7 @@ const Impact = () => {
       <section className="relative h-[618px] w-full flex items-center justify-center">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/images/thanksgiving-2.jpg" 
+            src="/images/accomplishments-hero.jpg" 
             alt="Students at Agahozo-Shalom Youth Village" 
             className="w-full h-full object-cover object-center"
           />
@@ -20,7 +20,7 @@ const Impact = () => {
         </div>
         <div className="relative z-10 text-center w-[828px] max-w-full mx-auto px-4">
           <h1 className="text-[63px] leading-[69.3px] font-sans font-normal text-white my-[42.21px] max-w-[828px] mx-auto whitespace-pre-wrap">
-            The village’s Impact
+            Our accomplishments
           </h1>
         </div>
       </section>
@@ -194,4 +194,4 @@ const Impact = () => {
   );
 };
 
-export default Impact;
+export default Accomplishments;

@@ -1,8 +1,8 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
 
-const NationalImpact = () => {
+const CommunityResilience = () => {
   return (
     <div className="min-h-screen bg-white font-sans">
       <Navbar />
@@ -11,15 +11,15 @@ const NationalImpact = () => {
       <section className="relative h-[618px] w-full flex items-center justify-center">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/images/DSC00994.jpeg" 
-            alt="National Impact" 
+            src="/images/community-resilience-hero.jpg" 
+            alt="Community Resilience" 
             className="w-full h-full object-cover object-center"
           />
           <div className="absolute inset-0 bg-black/20"></div>
         </div>
         <div className="relative z-10 text-center w-[828px] max-w-full mx-auto px-4">
           <h1 className="text-[63px] leading-[69.3px] font-sans font-normal text-white my-[42.21px] max-w-[828px] mx-auto whitespace-pre-wrap">
-            National Impact
+            Community Resilience
           </h1>
         </div>
       </section>
@@ -229,4 +229,4 @@ const NationalImpact = () => {
   );
 };
 
-export default NationalImpact;
+export default CommunityResilience;

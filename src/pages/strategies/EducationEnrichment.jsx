@@ -1,10 +1,10 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import Button from '../components/Button';
-import CTASection from '../components/CTASection';
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
+import Button from '../../components/Button';
+import CTASection from '../../components/CTASection';
 
-const AsyvModel = () => {
+const EducationEnrichment = () => {
   return (
     <div className="min-h-screen bg-white font-sans">
       <Navbar />
@@ -13,7 +13,7 @@ const AsyvModel = () => {
       <section className="relative h-[618px] w-full flex items-center justify-center">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/images/Cover.jpg" 
+            src="/images/education-enrichment-hero.jpg" 
             alt="Students at Agahozo-Shalom Youth Village" 
             className="w-full h-full object-cover object-center"
           />
@@ -21,7 +21,7 @@ const AsyvModel = () => {
         </div>
         <div className="relative z-10 text-center w-[828px] max-w-full mx-auto px-4">
           <h1 className="text-[63px] leading-[69.3px] font-sans font-normal text-white my-[42.21px] max-w-[828px] mx-auto whitespace-pre-wrap">
-            The ASYV Model
+            Education Enrichment
           </h1>
         </div>
       </section>
@@ -31,7 +31,7 @@ const AsyvModel = () => {
         <div className="grid grid-cols-12 gap-x-4 mb-[60px]">
           <div className="col-start-3 col-span-8 text-center">
             <p className="text-[18px] font-light text-[#100404] leading-[28px] mb-6">
-              Agahozo-Shalom Youth Village (ASYV) is a residential living and learning community in rural Rwanda. Through healing, education, and love, ASYV empowers orphaned and vulnerable Rwandan youth to build lives of dignity and contribute to a better world.
+             At REAP-Rwanda, we believe that education is the key to unlocking the potential of every child. Our Education Enrichment program is designed to provide Rwandan youth with access to quality education and the resources they need to succeed. 
             </p>
           </div>
         </div>
@@ -188,4 +188,4 @@ const AsyvModel = () => {
   );
 };
 
-export default AsyvModel;
+export default EducationEnrichment;

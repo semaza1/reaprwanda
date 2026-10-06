@@ -8,14 +8,31 @@ const Blog = () => {
     <div className="min-h-screen bg-white">
       <Navbar />
 
-      <main className="max-w-[1200px] mx-auto px-[34px] py-[60px]">
+      {/* Hero Section */}
+      <section className="relative h-[618px] w-full flex items-center justify-center">
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="/images/blog-hero.jpg" 
+            alt="Students at Agahozo-Shalom Youth Village" 
+            className="w-full h-full object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-black/20"></div>
+        </div>
+        <div className="relative z-10 text-center w-[828px] max-w-full mx-auto px-4">
+          <h1 className="text-[63px] leading-[69.3px] font-sans font-normal text-white my-[42.21px] max-w-[828px] mx-auto whitespace-pre-wrap">
+            Updates on everything from REAP
+          </h1>
+        </div>
+      </section>
+
+      <main className="max-w-[1200px] mx-auto px-[34px] pt-[60px] pb-12 ">
         {/* Header Section */}
         <div className="text-center mb-[60px]">
           <h2 className="text-[47px] font-semibold tracking-[1.41px] leading-[56.4px] text-reap-yellow mb-[16px] font-sans">
-            Stories from the Village
+            Stories from Reap Rwanda
           </h2>
           <p className="text-[16px] font-light leading-[25.6px] text-[#100404] italic font-sans">
-            Updates on everything ASYV
+            Updates on everything REAP is doing to support the next generation of Rwandan leaders.
           </p>
         </div>
 

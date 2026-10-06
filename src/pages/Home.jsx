@@ -26,7 +26,7 @@ const Home = () => {
             Building vibrant, healthier communities for all. 
           </h1>
           <div className="flex justify-center">
-            <Button href="#" target="_blank" variant="white">
+            <Button href="/donate" target="_blank" variant="white">
               Get Involved
             </Button>
           </div>

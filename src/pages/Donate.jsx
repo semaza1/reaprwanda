@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
-const StartAFundraiser = () => {
+const Donate = () => {
   return (
     <div className="min-h-screen bg-white font-sans">
       <Navbar />
@@ -176,4 +176,4 @@ const StartAFundraiser = () => {
   );
 };
 
-export default StartAFundraiser;
+export default Donate;

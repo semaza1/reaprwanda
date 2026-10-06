@@ -52,7 +52,7 @@ const Footer = () => {
             <h3 className="text-[17px] font-semibold tracking-[1.7px] mb-[17px] text-white">ACTION</h3>
             <ul className="flex flex-col gap-[2px]">
               <li><Link to="/contact" className="hover:opacity-80 transition-opacity">Get Involved</Link></li>
-              <li><a href="https://fundraise.asyv.org/campaign/759445/donate" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">Donate</a></li>
+              <li><a href="/donate" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">Donate</a></li>
             </ul>
           </div>
 

@@ -8,7 +8,7 @@ const Navbar = () => {
   const navLinks = [
     { 
       name: 'About Us', 
-      to: '/about-us',
+      to: '',
       subLinks: [
         { name: 'Philosophy', to: '/philosophy' },
         { name: 'History', to: '/history' },
@@ -18,18 +18,18 @@ const Navbar = () => {
     { name: 'Blog', to: '/blog' },
     { 
       name: 'Strategies', 
-      to: '/strategies',
+      to: '',
       subLinks: [
-        { name: 'Education Enrichment', to: '/strategies/education-enrichment' },
-        { name: 'Community Resilience', to: '/strategies/community-resilience' }
+        { name: 'Education Enrichment', to: '/education-enrichment' },
+        { name: 'Community Resilience', to: '/community-resilience' }
       ]
     },
     { 
       name: 'Impact', 
-      to: '/impact',
+      to: '',
       subLinks: [
-        { name: 'Accomplishments', to: '/impact/accomplishments' },
-        { name: 'Annual Reports', to: '/impact/annual-reports' }
+        { name: 'Accomplishments', to: '/accomplishments' },
+        { name: 'Annual Reports', to: '/annual-reports' }
       ]
     },
     { name: 'Gallery', to: '/gallery' },
@@ -88,7 +88,7 @@ const Navbar = () => {
             {/* CTA Buttons */}
             <div className="ml-[12.5px] flex space-x-[11px]">
               <Button 
-                href="https://fundraise.asyv.org/campaign/759445/donate"
+                href="/donate"
                 variant="outline"
                 className="h-[40px] px-[15px] text-[15px]"
               >
