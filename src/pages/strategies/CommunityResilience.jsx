@@ -28,60 +28,67 @@ const CommunityResilience = () => {
         {/* Intro */}
         <div className="text-center mb-[60px]">
           <h3 className="text-[24px] font-light text-[#100404] leading-[36px] mb-[15px]">
-            Our vision for building a thriving future reaches far beyond the Village.
+            REAP believes that the success of children — and the quality of their education — and the strength of a community depend upon each other in order to break the cycle of poverty and generate opportunities for lifelong learning.
           </h3>
           <p className="text-[16px] font-light text-[#100404] leading-[25.6px]">
-            ASYV serves as a Center of Excellence, sharing proven aspects of our holistic, trauma-informed approach to education and career readiness with educators, young people, and institutions throughout Rwanda.
+            REAP’s programs target children and their parents, the Duha Complex Public School, and the surrounding communities of Duha and Akabare. By focusing on a rural area of 7,000 people, we are creating the conditions to reweave the fabric of these communities.
           </p>
         </div>
 
         {/* Teacher Trainings Section */}
         <div className="mb-[60px]">
           <h2 className="text-[47px] font-semibold tracking-[1.41px] leading-[56.4px] text-reap-yellow mb-[16px] font-sans">
-            Teacher Trainings
+            Community Learning Center and Library
           </h2>
           
           <div className="grid grid-cols-12 gap-x-8 items-start">
             <div className="col-span-12 md:col-span-7 pr-4">
               <p className="text-[16px] font-light text-[#100404] leading-[25.6px] mb-4">
-                Rwanda’s Vision 2050 prioritizes developing a national education system that equips students with the hard and soft skills they need to thrive in an increasingly technology-driven, knowledge-based economy.
+                The Community Learning Center and Library (CLCL) — close to the Duha school and at the crossroads of the village of Musha — maximizes the participation of students, parents, and the surrounding community. The center is designed as a convening place to promote community-driven homegrown solutions such as Friends of Family to deal with family conflict, Community Health Workers to increase access to health care, and the Village Kitchen to alleviate malnutrition and stunting.
               </p>
               
               <h3 className="text-[17px] font-semibold text-reap-green tracking-[1.7px] leading-[26.35px] uppercase mt-6 mb-2">
-                building AI literacy skills
+                Sustainable Agricultural Development
               </h3>
               <p className="text-[16px] font-light text-[#100404] leading-[25.6px] mb-4">
-                ASYV is currently working in collaboration with the AI education company Day of AI to pilot a training program to help educators from across Rwanda learn AI literacy and how to ethically use AI to foster critical thinking and problem-solving skills among students. The inaugural teacher training will be held in August 2026.
+                Our REAP farm at the CLCL is a community vegetable and fruit garden that our REAP agronomist manages. It is a model of modern and productive farming techniques. The farm helps to create a more sustainable approach to farming by providing seedlings to community members who can readily plant them in their small plots of land to generate a quicker, healthier harvest. The farm also produces food that supplements balanced meals for the nutrition program. REAP also initiated a vegetable garden at the Duha School which supports the feeding of the students for the past six years.
               </p>
 
               <h3 className="text-[17px] font-semibold text-reap-green tracking-[1.7px] leading-[26.35px] uppercase mt-6 mb-2">
-                sharing our holistic approach to education
+                Parent Evening
               </h3>
               <p className="text-[16px] font-light text-[#100404] leading-[25.6px] mb-4">
-                Our program with Day of AI builds on the incredible success of our Educational Resilience Program (ERP). Between 2021 and 2024, the ERP trained 500 teachers and 152 directors of studies from 171 schools across Rwanda in digital skills, student-centered teaching, and life skills concepts like sexual and reproductive health, mental health, and financial literacy. These ERP graduates went on to offer peer trainings to approximately 3,300 additional teachers—<strong>impacting nearly 123,000 students</strong>.
+                This weekly three-hour meeting is an open invitation to all parents in the community. We host discussions around household issues like marital conflict, domestic violence, alcoholism, childrens’ rights, micro-savings, and circumstances that affect a family’s well-being.
               </p>
               <p className="text-[16px] font-light text-[#100404] leading-[25.6px]">
-                The ERP was created in partnership with the Mastercard Foundation, the Gashora Girls Academy of Science and Technology, and the Rwandan Ministry of Education. Learn more about how the ERP trainings impacted students, educators, and schools across Rwanda in our <a href="https://drive.google.com/file/d/1-4_U-ReDVGnNuXysZm29RYHAQlJD1EJ9/view" target="_blank" rel="noreferrer" className="text-reap-green hover:underline">Impact Report</a>.
+                The community selects parent volunteers who take turns facilitating. REAP staff occassionally run workshops on skills that include effective group facilitation and community mobilization.
               </p>
             </div>
             
             <div className="col-span-12 md:col-span-5 mt-8 md:mt-0">
-              <a href="https://drive.google.com/file/d/1-4_U-ReDVGnNuXysZm29RYHAQlJD1EJ9/view" target="_blank" rel="noreferrer" className="block relative group">
-                <img src="/images/ASYV_Impact_Report_on_the_Educational_Resilience_Program_THUMB.jpg" alt="Impact Report" className="w-full h-auto object-cover rounded shadow-md group-hover:opacity-90 transition-opacity" />
-                <p className="text-sm text-center mt-2 italic text-gray-600">Click to read.</p>
-              </a>
+              <div className="block relative group">
+                <img src="/images/MpsandcommunitymembersinthenewREAPCenter.jpg" alt="CLCL" className="w-full h-auto object-cover rounded shadow-md group-hover:opacity-90 transition-opacity" />
+                <p className="text-sm text-center mt-2 italic text-gray-600">Community Learning Center and Library.</p>
+              </div>
             </div>
           </div>
         </div>
 
         {/* Teacher Quote */}
-        <div className="bg-gray-50 p-10 rounded-lg mb-[60px] text-center max-w-[800px] mx-auto border-l-4 border-reap-yellow">
-          <blockquote className="text-[18px] font-light text-[#100404] leading-[28.8px] mb-4 italic">
-            “In my class, there was a learner who used to perform poorly in all tests, but after the training at Agahozo-Shalom Youth Village, I tried to be closer to the child and talked to her. I identified her problem. I started to help her through guidance and counseling, and now she is emotionally stable, and her performance is increasing.”
-          </blockquote>
-          <p className="text-[16px] font-semibold text-reap-green uppercase">
-            — Tuyisenge Jackson, teacher at G.S. Matimba and ERP graduate
-          </p>
+        <div className="relative bg-white p-8 rounded-xl border border-gray-100 mt-10 mb-[60px] max-w-[800px] mx-auto">
+          <div className="absolute -top-5 -left-1 bg-white px-2">
+            <svg className="w-12 h-12 text-[#fce8b2]" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+            </svg>
+          </div>
+          <div className="border-l-[1.5px] border-[#b5e0b5] pl-6 ml-2">
+            <blockquote className="text-[16px] text-gray-800 leading-relaxed mb-4">
+              “By focusing on a rural area of 7,000 people, we are creating the conditions to reweave the fabric of these communities through homegrown solutions, breaking the cycle of poverty and generating opportunities for lifelong learning.”
+            </blockquote>
+            <p className="text-[14px] font-bold text-[#1eb53a] uppercase">
+              — REAP RWANDA
+            </p>
+          </div>
         </div>
 
         <hr className="border-t border-gray-200 my-[60px]" />
@@ -89,54 +96,68 @@ const CommunityResilience = () => {
         {/* Supporting Refugee Students */}
         <div className="mb-[60px]">
           <h2 className="text-[47px] font-semibold tracking-[1.41px] leading-[56.4px] text-reap-yellow mb-[16px] font-sans">
-            Supporting Refugee Students
+            The SEED Project
           </h2>
           
           <div className="grid grid-cols-12 gap-x-8 mb-[40px] items-center">
             <div className="col-span-12 md:col-span-6 mb-6 md:mb-0">
-              <img src="/images/IRIS.jpg" alt="Refugee Students" className="w-full h-auto object-cover rounded shadow-md" />
+              <img src="/images/539A4196-scaled.jpg" alt="The SEED Project" className="w-full h-auto object-cover rounded shadow-md" />
             </div>
             <div className="col-span-12 md:col-span-6">
               <p className="text-[16px] font-light text-[#100404] leading-[25.6px] mb-4">
-                Currently, over 50,000 school-aged refugees—and rising—live in Rwanda. Too often refugee students face barriers to education and academic success, despite research showing that they can achieve just as much as their peers if given the right support.
+                The SEED project (Strengthening Entrepreneurship, Equity, and Dignity), supported by a start-up grant from the U.S. Embassy, reinforces the spirit of community resilience and leadership. From the ashes of an abandoned building, REAP is assisting the renovation of this site, activating a sewing cooperative, addressing the need for sustainable sanitary napkins, and raising gender equity.
               </p>
               
               <h3 className="text-[17px] font-semibold text-reap-green tracking-[1.7px] leading-[26.35px] uppercase mt-6 mb-2">
-                our Ikaze Refugee Impact Scholarship (IRIS) program
+                Student Clubs Supporting Resiliency
               </h3>
               <p className="text-[16px] font-light text-[#100404] leading-[25.6px] mb-4">
-                IRIS identifies high-achieving refugee students and places them in top Rwandan secondary schools. We then provide monetary, academic, and psychosocial support throughout their secondary school journeys.
+                Our Business Leadership club helps male and female students create and run businesses and entrepreneurial projects to help generate income and prepare for life after school. The Musha Alumni Club helps high school graduates with technology, internet and employable skills at the REAP’s CLCL.
               </p>
 
               <h3 className="text-[17px] font-semibold text-reap-green tracking-[1.7px] leading-[26.35px] uppercase mt-6 mb-2">
-                our iris scholars
+                Micro-savings & Community Service
               </h3>
               <p className="text-[16px] font-light text-[#100404] leading-[25.6px] mb-4">
-                In 2025, we welcomed our inaugural group of 50 IRIS scholars. Each student was displaced from Burundi or the Democratic Republic of the Congo and living in one of Rwanda’s five refugee camps. In August 2026, we will enroll an additional 150 scholars, with plans to continue scaling the program from there. IRIS is conducted in collaboration with the Rwandan education organization Isomo and the Shapiro Foundation.
+                Grassroots Micro-savings Groups increase savings and provide loans for food, cattle, clothes and health insurance to strengthen economic and social wellbeing. Parents and students who participate in REAP’s programs partake in monthly Umuganda activities (a practice from Rwandan culture of self-help and cooperation) at both the CLCL and Ihuriro Community Center.
               </p>
               <p className="text-[16px] font-light text-[#100404] leading-[25.6px]">
-                Before enrolling in their new schools, IRIS scholars attend an orientation camp in the Village, where they receive mental health support and career guidance and learn English and computer skills. Below, two current IRIS scholars talk about how the program is impacting them.
+                REAP, in partnership with local Rwandan government representatives, has formed a community board of 12 volunteer members and Duha School teachers. The board meets at least twice a month at the CLCL and reports to REAP and the government.
               </p>
             </div>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[1000px] mx-auto">
-            <div className="bg-gray-50 p-8 rounded-lg border-t-4 border-reap-yellow shadow-sm">
-              <blockquote className="text-[16px] font-light text-[#100404] leading-[25.6px] mb-4 italic">
-                “I am from Burundi. I have been in the Mahama camp for almost all my life. In the camp, I learned things, but we had no computer, no library. At ASYV, I met kids from Congo and Burundi, and we shared our stories. I learned that I am not alone. Now, I speak more and join others, even here at my new school. I think IRIS will make my future bright. I have hopes to become someone important, maybe a teacher or nurse.”
-              </blockquote>
-              <p className="text-[15px] font-semibold text-reap-green uppercase">
-                — Bernice
-              </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[1000px] mx-auto pt-8">
+            <div className="relative bg-white p-8 rounded-xl border border-gray-100">
+              <div className="absolute -top-5 -left-1 bg-white px-2">
+                <svg className="w-12 h-12 text-[#fce8b2]" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                </svg>
+              </div>
+              <div className="border-l-[1.5px] border-[#b5e0b5] pl-6 ml-2">
+                <blockquote className="text-[16px] text-gray-800 leading-relaxed mb-4">
+                  “The SEED program includes five integrative components sequenced over three years, including a Sexual and Reproductive Health Education Community Campaign led by our two student clubs from Duha Complex School.”
+                </blockquote>
+                <p className="text-[14px] font-bold text-[#1eb53a] uppercase">
+                  — SEED PROJECT INITIATIVE
+                </p>
+              </div>
             </div>
             
-            <div className="bg-gray-50 p-8 rounded-lg border-t-4 border-reap-yellow shadow-sm">
-              <blockquote className="text-[16px] font-light text-[#100404] leading-[25.6px] mb-4 italic">
-                “At ASYV, I learned to be responsible and think bigger. I feel I can become whoever I want, and use my education to help others and the environment. Maybe I will start a project to clean water or improve farming. If many students in the camps can be part of IRIS, we will have more leaders. We can change the mentality, show others refugees can contribute and benefit both our community and Rwanda.”
-              </blockquote>
-              <p className="text-[15px] font-semibold text-reap-green uppercase">
-                — Dieudonné
-              </p>
+            <div className="relative bg-white p-8 rounded-xl border border-gray-100">
+              <div className="absolute -top-5 -left-1 bg-white px-2">
+                <svg className="w-12 h-12 text-[#fce8b2]" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                </svg>
+              </div>
+              <div className="border-l-[1.5px] border-[#b5e0b5] pl-6 ml-2">
+                <blockquote className="text-[16px] text-gray-800 leading-relaxed mb-4">
+                  “It includes the production of sustainable sanitary napkins, the formation of 'INEZIGABA', a community sewing cooperative, and the creation of a tailoring vocational training school for unemployed high school graduates.”
+                </blockquote>
+                <p className="text-[14px] font-bold text-[#1eb53a] uppercase">
+                  — COMMUNITY DEVELOPMENT
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -146,41 +167,48 @@ const CommunityResilience = () => {
         {/* Center of Excellence */}
         <div className="mb-[60px]">
           <h2 className="text-[47px] font-semibold tracking-[1.41px] leading-[56.4px] text-reap-yellow mb-[16px] font-sans">
-            Center of Excellence
+            Student Clubs Supporting Girls
           </h2>
           
           <div className="grid grid-cols-12 gap-x-8 mb-[40px] items-start">
             <div className="col-span-12 md:col-span-6 mb-6 md:mb-0">
-              <a href="https://drive.google.com/file/d/1DWn6L2hQ5BAcEK1zB_a4uhkpuxBOvVQw/view" target="_blank" rel="noreferrer" className="block">
-                <img src="/images/TULANE.webp" alt="Tulane" className="w-full h-auto object-cover rounded shadow-md hover:opacity-90 transition-opacity" />
-              </a>
+              <div className="block">
+                <img src="/images/539A9463-scaled.jpg" alt="Student Clubs Supporting Girls" className="w-full h-auto object-cover rounded shadow-md hover:opacity-90 transition-opacity" />
+              </div>
             </div>
             <div className="col-span-12 md:col-span-6">
               <p className="text-[16px] font-light text-[#100404] leading-[25.6px] mb-4">
-                Since our founding, we’ve had a vision for a thriving future in which our holistic approach to education affordably and sustainably reaches young people throughout Rwanda.
+                REAP recognizes the obstacles Rwandan girls face and strives to build their leadership skills. In that regard, REAP offers several programs, including Girl Guides, which teaches entrepreneurial and leadership skills. Girl guides raise and sell piglets to move toward financial independence and to develop business skills.
               </p>
               
               <h3 className="text-[17px] font-semibold text-reap-green tracking-[1.7px] leading-[26.35px] uppercase mt-6 mb-2">
-                our proven impact
+                Basketball & Tuseme Club
               </h3>
               <p className="text-[16px] font-light text-[#100404] leading-[25.6px] mb-4">
-                A two-year study led by faculty from Tulane University analyzed how the Village impacts our students, proving what we’ve always known from watching our young people: our model transforms futures. <a href="https://drive.google.com/file/d/1DWn6L2hQ5BAcEK1zB_a4uhkpuxBOvVQw/view" target="_blank" rel="noreferrer" className="text-reap-green hover:underline">Read more about the findings here.</a>
+                In 2017, REAP and Duha Complex School came together to make the students’ dreams a reality by installing a basketball court at the school. In 2019, the Duha Girls’ Basketball Team placed first in the Rwamagana District. The Tuseme “Let’s speak out” Club comprises boys and girls who uses drama and theater to speak out, raise awareness and address issues hindering girls social and academic success.
               </p>
               
-              <div className="bg-gray-50 p-6 rounded-lg my-6 border-l-4 border-reap-yellow">
-                <blockquote className="text-[16px] font-light text-[#100404] leading-[25.6px] mb-2 italic">
-                  “The findings reinforce the critical role that [ASYV’s] support systems play in breaking cycles of poverty and trauma.”
-                </blockquote>
-                <p className="text-[14px] font-semibold text-reap-green uppercase">
-                  — Tulane University Celia Scott Weatherhead School of Public Health and Tropical Medicine
-                </p>
+              <div className="relative bg-white p-8 rounded-xl border border-gray-100 mt-10 mb-6">
+                <div className="absolute -top-5 -left-1 bg-white px-2">
+                  <svg className="w-12 h-12 text-[#fce8b2]" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                  </svg>
+                </div>
+                <div className="border-l-[1.5px] border-[#b5e0b5] pl-6 ml-2">
+                  <blockquote className="text-[16px] text-gray-800 leading-relaxed mb-4">
+                    “With a holistic approach to physical and mental health, the program supports girls as they come to explore themselves and their community.”
+                  </blockquote>
+                  <p className="text-[14px] font-bold text-[#1eb53a] uppercase">
+                    — G.L.O.W. MENTORSHIP PROGRAM
+                  </p>
+                </div>
               </div>
 
               <h3 className="text-[17px] font-semibold text-reap-green tracking-[1.7px] leading-[26.35px] uppercase mt-6 mb-2">
-                taking that impact nationwide
+                Girls Leading Our World (G.L.O.W)
               </h3>
               <p className="text-[16px] font-light text-[#100404] leading-[25.6px]">
-                Due to our incredible impact, the Tulane team recommended that ASYV train other organizations and educators by becoming a Center of Excellence. In addition to the initiatives above, we're currently developing new programs that will share our interactive life skills curriculum, our trainings for educators in trauma-informed and gender-responsive pedagogy, and more with schools, teachers, and other caretakers from across Rwanda.
+                In collaboration with Ready for Reading, Global G.L.O.W and LitWorld, INEZA Community Learning Center and Library is home to a mentorship program for girls. Training and programs deepen self-esteem, foster self-advocacy, and increase access to economic opportunity through technolical and financial literacy.
               </p>
             </div>
           </div>
@@ -191,34 +219,20 @@ const CommunityResilience = () => {
         {/* Intore Learning Community */}
         <div className="mb-[60px]">
           <h3 className="text-[28px] font-semibold text-reap-yellow mb-[30px]">
-            The Intore Learning Community
+            Public Health Campaigns & Healthcare
           </h3>
           
           <div className="grid grid-cols-12 gap-x-8 items-center mb-[40px]">
             <div className="col-span-12 md:col-span-6 mb-6 md:mb-0">
-              <img src="/images/Intore_2.jpg" alt="Intore Learning Community" className="w-full h-auto object-cover rounded shadow-md" />
+              <img src="/images/539A9532-scaled.jpg" alt="Public Health Campaigns" className="w-full h-auto object-cover rounded shadow-md" />
             </div>
             <div className="col-span-12 md:col-span-6">
               <p className="text-[16px] font-light text-[#100404] leading-[25.6px] mb-4">
-                ASYV’s Intore Learning Community (ILC), a facility located adjacent to our main campus, provides a state-of-the-art setting for conferences, workshops, and retreats. ASYV hosts our national teacher trainings and other professional workshops in the ILC.
+                REAP recognizes and addresses the myriad socio-economic factors that have an impact on community-members’ well being. REAP engages the community in sexual and reproductive health campaigns through student clubs.
               </p>
               <p className="text-[16px] font-light text-[#100404] leading-[25.6px]">
-                Learn more about holding your own event in the ILC <a href="/contact" className="text-reap-green hover:underline">here</a>.
+                To reduce maternal and under-five mortality rates, REAP, in partnership with Musha Health Center, conducts programs for mothers with children aged 0 to 6 and pregnant women for prenatal and early childhood health care. Collaboration between the Rwamagana School of Nursing and REAP allows nurse interns to go into the community to visit homes in order to teach families nutrition practices.
               </p>
-            </div>
-          </div>
-          
-          <div className="max-w-[800px] mx-auto mt-[60px]">
-            <div className="relative pb-[56.25%] h-0 overflow-hidden shadow-lg rounded-lg">
-              <iframe 
-                className="absolute top-0 left-0 w-full h-full" 
-                src="https://www.youtube.com/embed/s20Q1FZa3ls?feature=oembed" 
-                frameBorder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerPolicy="strict-origin-when-cross-origin" 
-                allowFullScreen 
-                title="Bringing the Village to the World"
-              ></iframe>
             </div>
           </div>
         </div>
