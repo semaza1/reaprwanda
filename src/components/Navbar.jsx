@@ -33,6 +33,7 @@ const Navbar = () => {
       ]
     },
     { name: 'Gallery', to: '/gallery' },
+    { name: 'Join Us', to: '/join-us' },  
     { name: 'Contact', to: '/contact' },
   ];
 

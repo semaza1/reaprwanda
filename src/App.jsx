@@ -11,7 +11,7 @@ import CommunityResilience from './pages/strategies/CommunityResilience';
 
 import AnnualReports from './pages/impact/AnnualReports';
 
-import Careers from './pages/Careers';
+import JoinUs from './pages/JoinUs';
 import Donate from './pages/Donate';
 import Contact from './pages/Contact';
 import Gallery from './pages/Gallery';
@@ -25,7 +25,7 @@ function App() {
         <Route path="/accomplishments" element={<Accomplishments />} />
         <Route path="/community-resilience" element={<CommunityResilience />} />
         <Route path="/annual-reports" element={<AnnualReports />} />
-        <Route path="/careers" element={<Careers />} />
+        <Route path="/join-us" element={<JoinUs />} />
         <Route path="/donate" element={<Donate />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/gallery" element={<Gallery />} />

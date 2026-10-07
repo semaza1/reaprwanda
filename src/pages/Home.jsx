@@ -98,19 +98,31 @@ const Home = () => {
       {/* Partners Section */}
       <section className="py-[100px]">
         <div className="max-w-[1200px] mx-auto px-[34px] text-center">
-          <SectionHeader title="Reap Rwanda has been featured in ..." />
-          <div className="flex flex-wrap justify-center items-center gap-12 mt-12">
-            <img src="/images/partners/IIN.png" alt="IIN" className="h-16 object-contain" />
-            <img src="/images/partners/grobal%20glow.png" alt="Global Glow" className="h-16 object-contain" />
-            <img src="/images/partners/monar.png" alt="Monar" className="h-16 object-contain" />
-            <img src="/images/partners/public%20library.png" alt="Public Library" className="h-16 object-contain" />
-            <img src="/images/partners/republic%20rwanda.jpg" alt="Republic Rwanda" className="h-16 object-contain" />
-            <img src="/images/partners/rollins.png" alt="Rollins" className="h-16 object-contain" />
-            <img src="/images/partners/rotary.png" alt="Rotary" className="h-16 object-contain" />
-            <img src="/images/partners/rwanda%20book%20mobile.jpg" alt="Rwanda Book Mobile" className="h-16 object-contain" />
-            <img src="/images/partners/sfr.png" alt="SFR" className="h-16 object-contain" />
-            <img src="/images/partners/soma%20rwanda.png" alt="Soma Rwanda" className="h-16 object-contain" />
-            <img src="/images/partners/uyisenga.png" alt="Uyisenga" className="h-16 object-contain" />
+          <SectionHeader title="Reap Rwanda has been in partnership with..." />
+          <div className="flex flex-wrap justify-center items-center gap-10 mt-12">
+            <img src="/images/partners/IIN.png" alt="IIN" className="w-36 h-20 object-contain" />
+            <img src="/images/partners/grobal%20glow.png" alt="Global Glow" className="w-36 h-20 object-contain" />
+            <img src="/images/partners/monar.png" alt="Monar" className="w-36 h-20 object-contain" />
+            <img src="/images/partners/public%20library.png" alt="Public Library" className="w-36 h-20 object-contain" />
+            <img src="/images/partners/republic%20rwanda.jpg" alt="Republic Rwanda" className="w-36 h-20 object-contain" />
+            <img src="/images/partners/rollins.png" alt="Rollins" className="w-36 h-20 object-contain" />
+            <img src="/images/partners/rotary.png" alt="Rotary" className="w-36 h-20 object-contain" />
+            <img src="/images/partners/rwanda%20book%20mobile.jpg" alt="Rwanda Book Mobile" className="w-36 h-20 object-contain" />
+            <img src="/images/partners/sfr.png" alt="SFR" className="w-36 h-20 object-contain" />
+            <img src="/images/partners/soma%20rwanda.png" alt="Soma Rwanda" className="w-36 h-20 object-contain" />
+            <img src="/images/partners/uyisenga.png" alt="Uyisenga" className="w-36 h-20 object-contain" />
+            <img src="/images/partners/citizen-diplomacy.webp" alt="Citizen Diplomacy" className="w-36 h-20 object-contain" />
+            <img src="/images/partners/cosmotive.webp" alt="Cosmotive" className="w-36 h-20 object-contain" />
+            <img src="/images/partners/fxb.webp" alt="FXB" className="w-36 h-20 object-contain" />
+            <img src="/images/partners/global-giving.webp" alt="Global Giving" className="w-36 h-20 object-contain" />
+            <img src="/images/partners/mandela.webp" alt="Mandela" className="w-36 h-20 object-contain" />
+            <img src="/images/partners/moneygram.webp" alt="Moneygram" className="w-36 h-20 object-contain" />
+            <img src="/images/partners/ogstar-reading.webp" alt="Ogstar Reading" className="w-36 h-20 object-contain" />
+            <img src="/images/partners/rfr.webp" alt="RFR" className="w-36 h-20 object-contain" />
+            <img src="/images/partners/tech-rwanda.webp" alt="Tech Rwanda" className="w-36 h-20 object-contain" />
+            <img src="/images/partners/transforamtional.webp" alt="Transformational" className="w-36 h-20 object-contain" />
+            <img src="/images/partners/ur.webp" alt="UR" className="w-36 h-20 object-contain" />
+            <img src="/images/partners/world-connect.webp" alt="World Connect" className="w-36 h-20 object-contain" />
           </div>
         </div>
       </section>
