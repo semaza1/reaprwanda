@@ -55,6 +55,7 @@ const Home = () => {
       <section className="py-[100px]">
         <div className="max-w-[1200px] mx-auto px-[34px] text-center">
           <SectionHeader title="What REAP has done" />
+          <img src="/images/what-we-can-do.jpg" alt="What REAP has done" className="w-[828px] mx-auto h-[425px] object-cover" />
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 mt-16">
             {[
               { number: '9,000+', label: 'Homes electrified in the Musha community' },

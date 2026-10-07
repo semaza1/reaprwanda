@@ -150,9 +150,7 @@ const Navbar = () => {
             ))}
             <div className="pt-4 px-3">
               <Button 
-                href="https://fundraise.asyv.org/campaign/759445/donate" 
-                target="_blank" 
-                rel="noopener noreferrer"
+                href="/donate" 
                 variant="primary"
                 className="w-full justify-center text-lg py-3"
               >

@@ -40,13 +40,13 @@ const EducationEnrichment = () => {
         <div className="grid grid-cols-12 gap-x-4 mb-[60px] items-center">
           <div className="col-span-6 pr-[6%]">
             <h2 className="text-[47px] font-semibold tracking-[1.41px] leading-[56.4px] text-reap-yellow mb-[16px] font-sans">
-              Thriving Futures Start with ASYV
+              Empowering Communities, Shaping Futures
             </h2>
             <p className="text-[16px] font-light text-[#100404] leading-[25.6px] mb-4">
-              Each year, over 500 young people, ages 14 to 22, from vulnerable backgrounds call the Agahozo-Shalom Youth Village (ASYV) home. We offer our students a holistic program focused on education and building resilience, confidence, and career skills. We also offer a community of support—a Village family. Our graduates go on to build thriving futures for themselves and their communities.
+              REAP’s Ineza Library provides access to over 5,000 English and Kinyarwanda books while supporting children and adults through reading and literacy programs. Through its Mobile Library Project, REAP extends these opportunities into the Musha community, bringing Kinyarwanda books and guided reading activities directly to children in local schools and communities.
             </p>
             <p className="text-[16px] font-light text-[#100404] leading-[25.6px]">
-              As a Center of Excellence, we share components of our student-centered, trauma-informed approach with hundreds more educators and young people from across Rwanda.
+              At Duha School, REAP’s long-standing relationship with the school and community continues to shape its future. In addition to ongoing support for the school’s feeding program, REAP is now leading an initiative to enhance early childhood education. By incorporating play-based learning and providing additional materials, we aim to strengthen foundational skills and prepare young children for long-term success.
             </p>
           </div>
           <div className="col-span-6">
@@ -62,31 +62,14 @@ const EducationEnrichment = () => {
 
         <hr className="border-t border-gray-200 my-[60px]" />
 
-        {/* Our Name */}
-        <div className="grid grid-cols-12 gap-x-4 mb-[60px]">
-          <div className="col-start-3 col-span-8 text-center">
-            <h2 className="text-[47px] font-semibold tracking-[1.41px] leading-[56.4px] text-reap-yellow mb-[16px] font-sans">
-              Our Name
-            </h2>
-            <p className="text-[16px] font-light text-[#100404] leading-[25.6px] mb-4">
-              Founded in response to the orphan crisis caused by the 1994 Genocide Against the Tutsi in Rwanda, Agahozo-Shalom is a place where "tears are dried" (from the Kinyarwanda word "agahozo") and where youth from vulnerable backgrounds can “live in peace” (from the Hebrew word "shalom").
-            </p>
-            <p className="text-[16px] font-light text-[#100404] leading-[25.6px]">
-              ASYV was inspired by Yemin Orde, a youth village established in 1953 to care for orphans of the Holocaust. Our founder, Anne Heyman, and our founding executive director, Sifa Nsengimana, collaborated with an international group of experts to ensure our program best serves young people in Rwanda.
-            </p>
-          </div>
-        </div>
-
-        <hr className="border-t border-gray-200 my-[60px]" />
-
         {/* Our Approach */}
         <div className="mb-[60px]">
           <div className="text-center mb-12">
             <h2 className="text-[47px] font-semibold tracking-[1.41px] leading-[56.4px] text-reap-yellow mb-[16px] font-sans">
-              Our Approach
+              REAP’s Impact
             </h2>
             <p className="text-[16px] font-light text-[#100404] leading-[25.6px] max-w-3xl mx-auto">
-              All aspects of Village life are designed to support students to heal from past traumas, dream big, and achieve those dreams.
+              All aspects of REAP’s work are designed to strengthen learning, nurture potential, and help children, families, and communities build brighter futures.
             </p>
           </div>
           
@@ -94,36 +77,36 @@ const EducationEnrichment = () => {
             <div className="space-y-8">
               <div>
                 <h3 className="text-[20px] font-semibold text-reap-green tracking-[1px] leading-[26.35px] uppercase mb-3">
-                  Supportive Living Environment
+                  Library
                 </h3>
                 <p className="text-[16px] font-light text-[#100404] leading-[25.6px]">
-                  Our Village campus in Rwanda’s Eastern Province provides students with a supportive living environment, including campus homes and live-in staff Mamas.
+                  REAP’s Ineza Library provides access to over 5,000 English and Kinyarwanda books while supporting children and adults through reading and literacy programs. Through its Mobile Library Project, REAP extends these opportunities into the Musha community, bringing Kinyarwanda books and guided reading activities directly to children in local schools and communities.
                 </p>
               </div>
               <div>
                 <h3 className="text-[20px] font-semibold text-reap-green tracking-[1px] leading-[26.35px] uppercase mb-3">
-                  Student-Centered Education
+                  INEZA Academy
                 </h3>
                 <p className="text-[16px] font-light text-[#100404] leading-[25.6px]">
-                  Our top-notch secondary school education emphasizes critical thinking, career readiness, digital skills, and entrepreneurship.
+                  INEZA Academy provides young children with quality, play-based early education that supports their development while engaging parents in positive parenting, nutrition, and early literacy. Through its partnership with Groupe Scolaire Nyina wa Jambo Ruhita, REAP also creates a pathway for graduates to continue their education in a strong learning environment.
                 </p>
               </div>
               <div>
                 <h3 className="text-[20px] font-semibold text-reap-green tracking-[1px] leading-[26.35px] uppercase mb-3">
-                  Health and Wellness
+                  Primary School Teacher's Lunch
                 </h3>
                 <p className="text-[16px] font-light text-[#100404] leading-[25.6px]">
-                  Our students receive medical and mental health care and an interactive education in life skills topics such as sexual and reproductive health and rights, gender equity, and financial literacy. All student-facing staff, including teachers, receive trainings in providing trust-based, trauma-informed care.
+                  REAP provides daily nutritious lunches to 34 primary school teachers at Duha School Complex, supporting their wellbeing and morale during long teaching days. The program helps educators stay energized and focused as they support their students.
                 </p>
               </div>
             </div>
             <div className="space-y-8">
               <div>
                 <h3 className="text-[20px] font-semibold text-reap-green tracking-[1px] leading-[26.35px] uppercase mb-3">
-                  Life Enrichment Programs
+                  Technology Integration and Digital Literacy
                 </h3>
                 <p className="text-[16px] font-light text-[#100404] leading-[25.6px]">
-                  Our students participate in extracurricular athletics, arts, and science and technology programs and in student-led clubs that explore subjects from sign language to robotics. Through these activities, our young people build passion, confidence, and practical skills.
+                  REAP equips students and teachers with digital skills through a technology lab featuring laptops, iPads, tablets, and Internet access. Students use technology for research, presentations, and learning, while access to digital stories in Kinyarwanda and English strengthens literacy and expands educational resources.
                 </p>
               </div>
               <div>
@@ -144,33 +127,65 @@ const EducationEnrichment = () => {
         <div className="grid grid-cols-12 gap-x-4 mb-[60px]">
           <div className="col-span-6 pr-[6%]">
             <h2 className="text-[32px] font-semibold tracking-[1px] leading-[40px] text-reap-yellow mb-[16px] font-sans">
-              Our core values
+              Literacy
             </h2>
+            <h3 className="text-[16px] font-semibold tracking-[1px] leading-[40px] text-reap-green mb-[16px] font-sans">
+              –&nbsp;The Fran Bowman Multisensory Reading Program
+            </h3>
             <p className="text-[16px] font-light text-[#100404] leading-[25.6px] mb-4">
-              Our core values inspire all of our work, focusing our staff on the best interests of the child and helping our students to create a community dedicated to building empowered and self-reliant lives.
+              REAP uses innovative, technology-based reading and English programs to strengthen students’ literacy skills. Through interactive learning and ESL support, students improve their reading, listening, and speaking abilities, helping them engage more effectively with their studies and prepare for national exams.
+            </p>
+            <h3 className="text-[16px] font-semibold tracking-[1px] leading-[40px] text-reap-green mb-[16px] font-sans">
+              –&nbsp;Soma Umenye (Read and Understand Kinyarwanda)
+            </h3>
+            <p className="text-[16px] font-light text-[#100404] leading-[25.6px] mb-4">
+              REAP supports struggling students in Grades 1–3 at Duha Complex School through targeted Kinyarwanda reading and writing instruction. Trained instructors help students strengthen their literacy skills and reach their grade-level learning goals.
+            </p>
+            <h3 className="text-[16px] font-semibold tracking-[1px] leading-[40px] text-reap-green mb-[16px] font-sans">
+              –&nbsp;Local Stories and Proverbs
+            </h3>
+            <p className="text-[16px] font-light text-[#100404] leading-[25.6px] mb-4">
+              REAP promotes Rwanda’s cultural heritage through bilingual books, folktales, proverbs, and stories rooted in local traditions. By documenting and sharing indigenous knowledge, REAP helps preserve Rwanda’s rich oral storytelling tradition for future generations.
+            </p>
+            <h3 className="text-[16px] font-semibold tracking-[1px] leading-[40px] text-reap-green mb-[16px] font-sans">
+              –&nbsp;Adult Literacy
+            </h3>
+            <p className="text-[16px] font-light text-[#100404] leading-[25.6px] mb-4">
+              REAP empowers adults with practical literacy, financial literacy, and English language skills through community-based training programs. These programs help participants strengthen their everyday knowledge and improve their readiness for employment opportunities in Rwanda.
             </p>
           </div>
           <div className="col-span-6 pl-[6%] border-l border-gray-200">
             <h2 className="text-[32px] font-semibold tracking-[1px] leading-[40px] text-reap-yellow mb-[16px] font-sans">
-              Our mission
+              Student Clubs Supporting Education
             </h2>
+            <h3 className="text-[16px] font-semibold tracking-[1px] leading-[40px] text-reap-green mb-[16px] font-sans">
+              –&nbsp;Debate club
+            </h3>
             <p className="text-[16px] font-light text-[#100404] leading-[25.6px] mb-4">
-              Values shared by Rwandan and Jewish traditions are also at the heart of ASYV's mission. Just as Rwandan culture emphasizes communal responsibility and care for the vulnerable through concepts like <em>ubudehe</em> (solidarity) and <em>agaciro</em> (dignity), Jewish tradition emphasizes <em>tikkun olam</em> (repairing the world) and <em>tikkun halev</em> (healing the heart).
+              Students engage in critical thinking, research, and public speaking, developing their communication skills and learning to express their ideas confidently and respectfully.
+            </p>
+            <h3 className="text-[16px] font-semibold tracking-[1px] leading-[40px] text-reap-green mb-[16px] font-sans">
+              –&nbsp;Musha Alumni Club
+            </h3>
+            <p className="text-[16px] font-light text-[#100404] leading-[25.6px] mb-4">
+              Musha Alumni Club is a gathering of REAP alumni who support each other’s personal and professional development. Through various activities and projects, the club promotes lifelong learning and community engagement.
+            </p>
+            <h2 className="text-[32px] font-semibold tracking-[1px] leading-[40px] text-reap-yellow mb-[16px] font-sans">
+              High school advancement and scholarships
+            </h2>
+            <h3 className="text-[16px] font-semibold tracking-[1px] leading-[40px] text-reap-green mb-[16px] font-sans">
+              –&nbsp;High school scholarships
+            </h3>
+            <p className="text-[16px] font-light text-[#100404] leading-[25.6px] mb-4">
+              Provides scholarships to students from low-income families who pass the national exams, enabling them to attend schools of excellence and access greater opportunities for higher education and future employment.
+            </p>
+            <h3 className="text-[16px] font-semibold tracking-[1px] leading-[40px] text-reap-green mb-[16px] font-sans">
+              –&nbsp;Saturday school for national exams
+            </h3>
+            <p className="text-[16px] font-light text-[#100404] leading-[25.6px] mb-4">
+              Provides Grade 9 students in day schools with additional academic support to strengthen their understanding of course material and develop effective exam-taking skills, increasing their chances of passing national exams and accessing schools of excellence.
             </p>
           </div>
-        </div>
-
-        {/* The Plan */}
-        <div className="bg-gray-50 p-12 rounded-lg text-center mt-12 mb-[60px]">
-          <h2 className="text-[36px] font-semibold tracking-[1px] leading-[45px] text-reap-yellow mb-[16px] font-sans">
-            The Plan
-          </h2>
-          <p className="text-[16px] font-light text-[#100404] leading-[25.6px] mb-8 max-w-3xl mx-auto">
-            Since first opening our gates, ASYV has made steady and significant progress in increasing our students' success and well-being. Our 2022–2025 strategic plan, <em>Fostering Healing, Self-Sufficiency, and Sustainability</em>, outlines how we will continue to strengthen our program's ability to provide all our students with what they need to thrive.
-          </p>
-          <Button variant="secondary" href="https://asyv.org/strategicplan" target="_blank">
-            Read Our Strategic Plan
-          </Button>
         </div>
 
       </main>
@@ -178,9 +193,9 @@ const EducationEnrichment = () => {
       {/* CTA Section */}
       <CTASection 
         title="Support Our Work" 
-        description="Help us continue to empower orphaned and vulnerable youth."
+        description="Help us give more children the opportunity to learn, grow, and build brighter futures."
         buttonText="Donate Now"
-        buttonHref="https://fundraise.asyv.org/campaign/759445/donate"
+        buttonHref="/donate"
       />
 
       <Footer />
