@@ -26,7 +26,7 @@ const Home = () => {
             Building vibrant, healthier communities for all. 
           </h1>
           <div className="flex justify-center">
-            <Button href="/donate" target="_blank" variant="white">
+            <Button to="/donate" variant="white">
               Get Involved
             </Button>
           </div>
@@ -51,6 +51,21 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Philosophy Section */}
+      <section className="py-[100px]">
+        <div className="max-w-[1200px] mx-auto px-[34px] text-center">
+          <SectionHeader title="Our Vision & Mission" />
+          <p className="text-[16px] text-gray-800 mb-8 leading-[25.6px] font-sans font-light max-w-4xl mx-auto">
+            We strive for a strong and vibrant community where everyone is empowered with meaningful opportunities to thrive. Our mission is to create an integrated and innovative approach to education and community development that improves literacy rates and fosters socio-economic well-being with the active support and leadership of the community.
+          </p>
+          <div className="flex justify-center">
+            <Link to="/philosophy" className="text-reap-green font-semibold hover:text-reap-yellow transition-colors">
+              Read more about our philosophy &rarr;
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Impact Stats Section */}
       <section className="py-[100px]">
         <div className="max-w-[1200px] mx-auto px-[34px] text-center">
@@ -72,6 +87,33 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Core Strategies Section */}
+      <section className="py-[100px]">
+        <div className="max-w-[1200px] mx-auto px-[34px]">
+          <SectionHeader title="Our Core Strategies" className="text-center" />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start mt-12">
+            <div>
+              <h3 className="text-[28px] font-semibold text-reap-yellow mb-4 font-sans">Education Enrichment</h3>
+              <p className="text-[16px] text-gray-800 mb-6 leading-[25.6px] font-sans font-light">
+                Education is the key to unlocking the potential of every child. Through our Ineza Library, early childhood education, and technology integration, we provide Rwandan youth with access to quality education and the resources they need to succeed and shape positive futures.
+              </p>
+              <Link to="/education-enrichment" className="text-reap-green font-semibold hover:text-reap-yellow transition-colors">
+                Explore Education Programs &rarr;
+              </Link>
+            </div>
+            <div>
+              <h3 className="text-[28px] font-semibold text-reap-yellow mb-4 font-sans">Community Resilience</h3>
+              <p className="text-[16px] text-gray-800 mb-6 leading-[25.6px] font-sans font-light">
+                We believe that the success of children and the strength of a community depend upon each other. Through sustainable agriculture, public health campaigns, women's cooperatives, and parent education, we foster conditions that break the cycle of poverty.
+              </p>
+              <Link to="/community-resilience" className="text-reap-green font-semibold hover:text-reap-yellow transition-colors">
+                Explore Community Programs &rarr;
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Latest News Section */}
       <section className="py-[100px] px-4 sm:px-6 lg:px-8 max-w-[1200px] mx-auto">
         <SectionHeader title="The Latest from REAP Rwanda" />
@@ -88,6 +130,21 @@ const Home = () => {
               <h3 className="text-[20px] font-light leading-[24px] text-gray-900 group-hover:text-reap-yellow transition-colors font-sans">{news.title}</h3>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Team Section */}
+      <section className="py-[100px]">
+        <div className="max-w-[1200px] mx-auto px-[34px] text-center">
+          <SectionHeader title="Meet The Team" />
+          <p className="text-[16px] text-gray-800 mb-8 leading-[25.6px] font-sans font-light max-w-4xl mx-auto">
+            Our dedicated team of educators, agronomists, health workers, and community leaders work tirelessly to bring REAP's vision to life. Based in both Rwanda and the US, we are united by a shared commitment to sustainable, community-driven development.
+          </p>
+          <div className="flex justify-center">
+            <Link to="/team" className="text-reap-green font-semibold hover:text-reap-yellow transition-colors">
+              See All Team Members &rarr;
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -127,6 +184,14 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* CTA Section */}
+      <CTASection 
+        title="Get Involved" 
+        description="Whether you want to donate, volunteer, or simply learn more about our work, there are many ways to join us in building vibrant, healthier communities for all."
+        buttonText="Contact Us"
+        buttonTo="/contact"
+      />
 
       <Footer />
     </div>
