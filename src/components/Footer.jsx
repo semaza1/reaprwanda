@@ -72,32 +72,17 @@ const Footer = () => {
               <a href="http://youtube.com/@reap2023" target="_blank" rel="noopener noreferrer" className="w-[20px] h-[20px] text-white hover:opacity-80">
                 <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.582 6.186a2.716 2.716 0 00-1.91-1.914C17.986 3.8 12 3.8 12 3.8s-5.986 0-7.672.472a2.716 2.716 0 00-1.91 1.914C1.946 7.872 1.946 12 1.946 12s0 4.128.472 5.814a2.716 2.716 0 001.91 1.914c1.686.472 7.672.472 7.672.472s5.986 0 7.672-.472a2.716 2.716 0 001.91-1.914c.472-1.686.472-5.814.472-5.814s0-4.128-.472-5.814zM9.96 15.513V8.487L15.987 12l-6.027 3.513z" /></svg>
               </a>
+              {/* google @mailto */}
+              
             </div>
 
-            <h3 className="text-[17px] font-semibold tracking-[1.7px] mb-[17px] text-white">
-              Sign up to receive news and updates.
-            </h3>
-            <p className="mb-[15px]">
-              <strong><em>Get news from REAP Rwanda in your inbox.</em></strong>
-            </p>
-            
-            <form className="flex flex-col gap-2 mt-[15px]" onSubmit={(e) => e.preventDefault()}>
-              <div>
-                <label className="sr-only">Email</label>
-                <input type="email" placeholder="Email" className="w-full max-w-[205.5px] h-[46px] px-[15px] py-[10px] text-[14px] rounded-[3px] text-gray-900 border-none outline-none" required />
-              </div>
-              <div>
-                <label className="sr-only">First Name</label>
-                <input type="text" placeholder="First Name" className="w-full max-w-[205.5px] h-[46px] px-[15px] py-[10px] text-[14px] rounded-[3px] text-gray-900 border-none outline-none" required />
-              </div>
-              <div>
-                <label className="sr-only">Last Name</label>
-                <input type="text" placeholder="Last Name" className="w-full max-w-[205.5px] h-[46px] px-[15px] py-[10px] text-[14px] rounded-[3px] text-gray-900 border-none outline-none" required />
-              </div>
-              <button type="submit" className="mt-2 w-full max-w-[205.5px] h-[50px] p-[16px] text-[16px] font-normal text-white bg-reap-yellow rounded-[3px] hover:opacity-90 transition-opacity">
-                Sign up!
-              </button>
-            </form>
+            {/* GuideStar gold badge */}  
+            <div className="flex flex-col space-y-8 mt-4 lg:mt-0 items-start">
+              <a href="https://www.guidestar.org/profile/shared/2cd56ea6-1606-46e7-8d7e-ee9e16a07b12" target="_blank" rel="noreferrer" className="block w-full max-w-[230px]">
+                <img src="/images/guidestar-gold.svg" alt="GuideStar" className="w-full h-auto" />
+              </a>
+            </div> 
+
           </div>
         </div>
 
