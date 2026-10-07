@@ -67,7 +67,7 @@ const CommunityResilience = () => {
             
             <div className="col-span-12 md:col-span-5 mt-8 md:mt-0">
               <div className="block relative group">
-                <img src="/images/MpsandcommunitymembersinthenewREAPCenter.jpg" alt="CLCL" className="w-full h-auto object-cover rounded shadow-md group-hover:opacity-90 transition-opacity" />
+                <img src="/images/MpsandcommunitymembersinthenewREAPCenter.jpg" alt="CLCL" className="w-full h-auto object-cover group-hover:opacity-90 transition-opacity" />
                 <p className="text-sm text-center mt-2 italic text-gray-600">Community Learning Center and Library.</p>
               </div>
             </div>
@@ -101,7 +101,7 @@ const CommunityResilience = () => {
           
           <div className="grid grid-cols-12 gap-x-8 mb-[40px] items-center">
             <div className="col-span-12 md:col-span-6 mb-6 md:mb-0">
-              <img src="/images/539A4196-scaled.jpg" alt="The SEED Project" className="w-full h-auto object-cover rounded shadow-md" />
+              <img src="/images/539A4196-scaled.jpg" alt="The SEED Project" className="w-full h-auto object-cover" />
             </div>
             <div className="col-span-12 md:col-span-6">
               <p className="text-[16px] font-light text-[#100404] leading-[25.6px] mb-4">
@@ -173,7 +173,7 @@ const CommunityResilience = () => {
           <div className="grid grid-cols-12 gap-x-8 mb-[40px] items-start">
             <div className="col-span-12 md:col-span-6 mb-6 md:mb-0">
               <div className="block">
-                <img src="/images/539A9463-scaled.jpg" alt="Student Clubs Supporting Girls" className="w-full h-auto object-cover rounded shadow-md hover:opacity-90 transition-opacity" />
+                <img src="/images/539A9463-scaled.jpg" alt="Student Clubs Supporting Girls" className="w-full h-auto object-cover  hover:opacity-90 transition-opacity" />
               </div>
             </div>
             <div className="col-span-12 md:col-span-6">
@@ -224,7 +224,7 @@ const CommunityResilience = () => {
           
           <div className="grid grid-cols-12 gap-x-8 items-center mb-[40px]">
             <div className="col-span-12 md:col-span-6 mb-6 md:mb-0">
-              <img src="/images/539A9532-scaled.jpg" alt="Public Health Campaigns" className="w-full h-auto object-cover rounded shadow-md" />
+              <img src="/images/539A9532-scaled.jpg" alt="Public Health Campaigns" className="w-full h-auto object-cover" />
             </div>
             <div className="col-span-12 md:col-span-6">
               <p className="text-[16px] font-light text-[#100404] leading-[25.6px] mb-4">
