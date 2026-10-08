@@ -11,12 +11,11 @@ const Blog = () => {
       {/* Hero Section */}
       <section className="relative h-[618px] w-full flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0 overflow-hidden">
-          <iframe
-            src="https://www.youtube.com/embed/cTWA67wAOuU?autoplay=1&mute=1&controls=0&loop=1&playlist=cTWA67wAOuU&showinfo=0&rel=0&modestbranding=1&cc_load_policy=0&disablekb=1&iv_load_policy=3"
-            className="w-[100vw] max-w-none h-[56.25vw] min-h-[618px] min-w-[1099px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
-            allow="autoplay; encrypted-media"
-            frameBorder="0"
-          ></iframe>
+          <img 
+            src="/images/blog-hero.jpg" 
+            alt="Blog" 
+            className="w-full h-full object-cover object-center"
+          />
           <div className="absolute inset-0 bg-black/50"></div>
         </div>
         <div className="relative z-10 text-center w-[828px] max-w-full mx-auto px-4">
